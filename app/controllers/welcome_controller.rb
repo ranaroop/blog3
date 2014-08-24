@@ -51,7 +51,7 @@ class WelcomeController < ApplicationController
   			@message = session["visit"][3]
   		end
 
-  		if session["counter"] >= 4
+  		if session["counter"] >= 5
   			@message = "Fini!"
   		end
 

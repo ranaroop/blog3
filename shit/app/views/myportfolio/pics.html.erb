@@ -1,0 +1,49 @@
+
+
+
+My portfolio pics (aboutme on robby's example)
+
+<%= link_to('google', 'http://google.com')%>
+<hr/>
+
+
+
+
+<%= my_name = 'Rana' %>
+<%= my_name %>
+
+<hr/>
+<a href = "/welcome/index">Home</a>
+<a href = "/sitemap/index">Sitemap</a>
+
+
+<!--loop-->
+<% 1.upto(50).each do |variable_width| %>
+	<img 
+	src="http://www.ryanseacrest.com/wp-content/uploads/2012/08/Boo-The-Dog.jpg"
+    style="width: <%= variable_width %>px;" 
+/>
+
+<% end %>
+
+<hr/>
+
+<%= image_tag('3425436.jpg') %>
+
+
+<hr/>
+
+
+
+
+<% @image_urls.each do |name|  %>
+	<a href="<%= image_url(name) %>">
+    <%= image_tag(name) %>
+</a>
+<% end %>
+
+<p> New Visit Array: <%= @message %> </p>
+
+
+  
+<!-- <a href="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xpa1/t1.0-9/1560656_10152670763173254_4200004522404042888_n.jpg"> -->

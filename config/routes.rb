@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  get 'games/memory'
+  post 'games/memory' => 'games#memory'
+
   get 'myportfolio/index'
 
   get 'myportfolio/index'
