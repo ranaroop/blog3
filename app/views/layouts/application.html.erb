@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<header>This is my header</header>
+
+<hr/>
+<i>what's going on with this page?</i>
+
+<%= yield %>
+
+<i>what's going on with this page?</i>
+<hr/>
+
+
+<% if @user_name != nil %>
+	Hello <%= @user_name.capitalize %>
+<% end %>	
+
+
+<hr/>
+
+
+<p> Time Stamp: <%= @first_visit %> </p>
+<p> New Visit Array: <%= @message %> </p>
+
+
+</body>
+</html>
