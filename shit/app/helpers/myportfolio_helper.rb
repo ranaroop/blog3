@@ -1,2 +1,0 @@
-module MyportfolioHelper
-end
