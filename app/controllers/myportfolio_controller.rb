@@ -22,6 +22,8 @@ class MyportfolioController < ApplicationController
 
   end
 
+
+
   def pics
   	@url1 = 'lemons.JPG' 
 	url2 = 'carrots.JPG' 
