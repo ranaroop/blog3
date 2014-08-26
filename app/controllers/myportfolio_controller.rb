@@ -19,10 +19,16 @@ class MyportfolioController < ApplicationController
 
   	@first_visit = session['first_visit']
 
+  end
 
+  def myportfolio
+    chosen_category = params['category']
+    @project = Project.where(category: 'rails').all
+    #@project = Project.all
   end
 
 
+#params are rails parameters when you submit a form. if in a form, there is a box within a category. save in variable.
 
   def pics
   	@url1 = 'lemons.JPG' 

@@ -1,0 +1,13 @@
+Welcome to My Portfolio
+
+<% @project.each do |project| %>
+
+<p>
+	name: <%= project.name %>
+	<br/>
+	description: <%= project.description %>
+	<br/>
+	category: <%= project.category %>
+</p>
+
+<% end %>

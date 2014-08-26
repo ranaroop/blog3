@@ -13,7 +13,11 @@ class SitemapController < ApplicationController
   	session['first_visit'] = current_dt
   	end
 
-
+  def myportfolio
+    chosen_category = params['category']
+    @project = Project.where(category: 'rails').all
+    #@project = Project.all
+  end
 
   	#pull the date and time _from_ the session and make available to the view
 
