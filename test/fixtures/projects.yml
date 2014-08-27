@@ -6,7 +6,6 @@ one:
   github_link: MyText
   heroku_link: MyText
   picture: MyString
-  string: MyString
 
 two:
   name: MyString
@@ -14,4 +13,3 @@ two:
   github_link: MyText
   heroku_link: MyText
   picture: MyString
-  string: MyString

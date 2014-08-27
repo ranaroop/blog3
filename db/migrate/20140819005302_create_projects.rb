@@ -6,7 +6,6 @@ class CreateProjects < ActiveRecord::Migration
       t.text :github_link
       t.text :heroku_link
       t.string :picture
-      t.string :string
 
       t.timestamps
     end
