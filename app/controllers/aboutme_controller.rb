@@ -11,4 +11,3 @@
   def portfolio
     @projects = Project.all
   end
-end
