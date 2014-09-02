@@ -31,10 +31,15 @@ class MyportfolioController < ApplicationController
 #params are rails parameters when you submit a form. if in a form, there is a box within a category. save in variable.
 
   def pics
-  	@url1 = 'lemons.JPG' 
-	url2 = 'carrots.JPG' 
-	url3 = 'roopgroup.JPG'  
-	@image_urls = [@url1, url2, url3]
-
+    url1 = {'Carrots' => 'carrots.JPG'} 
+	  url2 = {'Pancakes' => 'pancakes.JPG'} 
+    url3 = {'Lemons' => 'lemons.JPG'} 
+    url4 = {'Tomatoes' => 'tomatoes.JPG'}
+    url5 = {'Sunflower' => 'sunflower.JPG'}
+    url6 = {'Bracelet' => 'bracelts.JPG'}
+    url7 = {'Roop Groop' => 'roopgroup.JPG'}
+    @image_urls = [url1, url2, url3, url4, url5, url6, url7 ]
+	  # @image_urls = [url1, url2, url3, url4, url5, url6]
   end
+
 end

@@ -19,28 +19,32 @@ My portfolio pics (aboutme on robby's example)
 <a href = "/games/memory">Test Your Memory</a>
 
 
-<!--loop-->
+<!--loop
 <% 1.upto(10).each do |variable_width| %>
 	<img 
 	src="sashi.JPG"
     style="width: <%= variable_width %>px;" 
 />
 
-<% end %>
+<% end %>-->
 
 <hr/>
 
-<%= image_tag("image_name.jpg", :alt => "alt text") %>
+<!-- <%= image_tag("lemons.JPG") %>
 
 
 <hr/>
+ -->
 
 
-
-<% @image_urls.each do |name|  %>
-	<a href="<%= image_url(name) %>">
-    <%= image_tag(name) %>
+<% @image_urls.each do |name| %>
+	<% name.each do |title,url|	%>
+	<a href="<%= image_url(url) %>">
+    <%= image_tag(url, :width => "50%") %>
+    <p><%= title %></p>
 </a>
+
+<% end %>
 <% end %>
 
 <p> New Visit Array: <%= @message %> </p>
